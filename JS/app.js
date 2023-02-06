@@ -24,18 +24,25 @@ rightArrow.addEventListener('click', function () {
 	console.log('22ciaooo')
     // al click aggiungere e rimuovere classe active
 
-    let photoCorrente = photoCarosello[indicePhotoAttiva]
-	// rimuovere classe active
-	photoCorrente.classList.remove('active')
+    if(indicePhotoAttiva<4){
+        let photoCorrente = photoCarosello[indicePhotoAttiva]
+        // rimuovere classe active
+        photoCorrente.classList.remove('active')
 
-	// aumentare l'indice
-	indicePhotoAttiva += 1
+        // aumentare l'indice
+        indicePhotoAttiva += 1
 
-	let prossimaPhoto = photoCarosello[indicePhotoAttiva]
-	// aggiungere classe active
-	prossimaPhoto.classList.add('active')
+        let prossimaPhoto = photoCarosello[indicePhotoAttiva]
+        // aggiungere classe active
+        prossimaPhoto.classList.add('active')
 
-	console.log('next slide', indicePhotoAttiva)
+        console.log('next slide', indicePhotoAttiva)
+    }else if(indicePhotoAttiva=4){
+        console.log('Stop') 
+        rightArrow.classList.add('photo') //classe photo ha display none
+    }
+    
+    
 
 })
 
