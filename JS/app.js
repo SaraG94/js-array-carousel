@@ -9,6 +9,11 @@ console.log(rightArrow)
 //prendere photo da html
 const photoCarosello = document.getElementsByClassName('photo')
 console.log(photoCarosello)
+
 //ascoltare evento click su arrow
 
+rightArrow.addEventListener('click', function () {
+	console.log('current slide')
+
+})
 // al click aggiungere e rimuovere classe active
