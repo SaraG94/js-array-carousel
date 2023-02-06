@@ -1,9 +1,9 @@
 console.log('Ciao')
 //prendere da html arrow
-const leftArrow = document.getElementsByClassName('arrow-left')
+const leftArrow = document.getElementById('left')
 console.log(leftArrow)
 
-const rightArrow = document.getElementsByClassName('arrow-right')
+const rightArrow = document.getElementById('right')
 console.log(rightArrow)
 
 //prendere photo da html
@@ -12,8 +12,14 @@ console.log(photoCarosello)
 
 //ascoltare evento click su arrow
 
-rightArrow.addEventListener('click', function () {
-	console.log('current slide')
+leftArrow.addEventListener('click', function () {
+	console.log('ciaooo')
 
 })
+
+rightArrow.addEventListener('click', function () {
+	console.log('22ciaooo')
+
+})
+
 // al click aggiungere e rimuovere classe active
