@@ -1,4 +1,4 @@
-console.log('Ciao')
+
 //prendere da html arrow
 const leftArrow = document.getElementById('left')
 console.log(leftArrow)
@@ -19,7 +19,7 @@ rightArrow.addEventListener('click', function () {
 	console.log('22ciaooo')
     // al click aggiungere e rimuovere classe active
 
-    if(indicePhotoAttiva<4){
+    if(indicePhotoAttiva<(photoCarosello.length-1)){
         let photoCorrente = photoCarosello[indicePhotoAttiva]
         // rimuovere classe active
         photoCorrente.classList.remove('active')
@@ -31,9 +31,6 @@ rightArrow.addEventListener('click', function () {
         // aggiungere classe active
         prossimaPhoto.classList.add('active')
 
-        console.log('next slide', indicePhotoAttiva)
-    }else if(indicePhotoAttiva=4){
-        console.log('Stop') 
     } 
 })
 
@@ -54,10 +51,6 @@ leftArrow.addEventListener('click', function () {
         // aggiungere classe active
         previousPhoto.classList.add('active')
 
-        console.log('next slide', indicePhotoAttiva)
-    }else if(indicePhotoAttiva=0){
-        console.log('Stop') 
-    } 
-
+    }
 })
 
