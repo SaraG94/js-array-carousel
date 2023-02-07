@@ -24,6 +24,7 @@ section{
 
 /******carosello********/
 .photo img{
+    width: 600px;
     aspect-ratio: 16/9;
 	object-fit: cover;
 	object-position: center;
